@@ -225,10 +225,10 @@ function App() {
       <aside className={`app-sidebar ${sidebarOpen ? 'is-open' : ''}`}>
         <div className="sidebar-heading">
           <img src={newChatImage} alt="" />
-          <button className="sidebar-new-chat" type="button" onClick={startNewSuggestion}>Want new<br />suggestion?</button>
-          <button className="sidebar-add" type="button" aria-label="Want new suggestion?" onClick={startNewSuggestion}><Icon name="plus" size={18} /></button>
+          <a className="sidebar-new-chat" href="/" onClick={(event) => { event.preventDefault(); startNewSuggestion() }}>Want new<br />suggestion?</a>
+          <button className="sidebar-add" type="button" aria-label="Start new chat" onClick={startNewSuggestion}><Icon name="plus" size={18} /></button>
         </div>
-        <button className={`sidebar-history ${isHistory ? 'active' : ''}`} type="button" onClick={() => { navigate(isHistory ? '/' : '/history'); setSidebarOpen(false) }}>Previous Suggestions</button>
+        <a className={`sidebar-history ${isHistory ? 'active' : ''}`} href="/history" onClick={(event) => { event.preventDefault(); navigate('/history'); setSidebarOpen(false) }}>Previous Suggestions</a>
       </aside>
       {sidebarOpen && <button className="drawer-backdrop" type="button" aria-label="Close navigation" onClick={() => setSidebarOpen(false)} />}
 
@@ -264,7 +264,7 @@ function App() {
                 <input id="chat-input" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Please tell me about your query!" autoComplete="off" />
                 <button className="ask-button" type="submit">Ask</button>
               </form>
-              <form className="save-form" onSubmit={(event) => { event.preventDefault(); saveConversation() }}><button className="save-button" type="submit" disabled={isWelcome}>Save</button></form>
+              <form className="save-form" onSubmit={(event) => { event.preventDefault(); saveConversation() }}><input className="save-button" type="submit" value="Save" disabled={isWelcome} /></form>
             </div>
           </main>
         )}

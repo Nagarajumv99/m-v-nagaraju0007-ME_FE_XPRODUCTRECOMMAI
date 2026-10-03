@@ -237,10 +237,10 @@ function App() {
       <aside className={`app-sidebar ${sidebarOpen ? 'is-open' : ''}`}>
         <div className="sidebar-heading">
           <img src={newChatImage} alt="" />
-          <a className="sidebar-new-chat" href="/" onClick={(event) => { event.preventDefault(); startNewSuggestion() }}>Want new<br />suggestion?</a>
+          <a className="sidebar-new-chat" href="/" onClick={(event) => { event.preventDefault(); startNewSuggestion() }}>Want new suggestion?</a>
           <button className="sidebar-add" type="button" aria-label="Start new chat" onClick={startNewSuggestion}><Icon name="plus" size={18} /></button>
         </div>
-        <a className={`sidebar-history ${isHistory ? 'active' : ''}`} href="/history" onClick={(event) => { event.preventDefault(); navigate('/history'); setSidebarOpen(false) }}>Previous Suggestions</a>
+        <a className={`sidebar-history ${isHistory ? 'active' : ''}`} href="/history" onClick={(event) => { event.preventDefault(); if (conversation.messages.length > 1) saveConversation(); navigate('/history'); setSidebarOpen(false) }}>Previous Suggestions</a>
       </aside>
       {sidebarOpen && <button className="drawer-backdrop" type="button" aria-label="Close navigation" onClick={() => setSidebarOpen(false)} />}
 

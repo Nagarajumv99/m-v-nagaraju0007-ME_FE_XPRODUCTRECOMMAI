@@ -1,0 +1,152 @@
+[
+    {
+      "id": 1,
+      "question": "Jeans 500 - 1000",
+      "response": [
+        "Here are your product suggestions:-",
+        "Wrogn, Link: https://www.wrogn.in",
+        "Levi's, Link: https://www.levi.in",
+        "Spykar, Link: https://www.spykar.com"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Jeans 1000 - 1500",
+      "response": [
+        "Here are your product suggestions:-",
+        "Pepe Jeans, Link: https://www.pepejeans.in",
+        "Lee, Link: https://www.lee.in",
+        "Mufti, Link: https://www.muftijeans.in"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Jeans 1500 - 2000",
+      "response": [
+        "Here are your product suggestions:-",
+        "Diesel, Link: https://www.diesel.com",
+        "Calvin Klein, Link: https://www.calvinklein.us",
+        "Wrangler, Link: https://www.wrangler.in"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "T-Shirt 300 - 700",
+      "response": [
+        "Here are your product suggestions:-",
+        "Puma, Link: https://in.puma.com",
+        "Nike, Link: https://www.nike.com",
+        "Adidas, Link: https://www.adidas.co.in"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "T-Shirt 700 - 1200",
+      "response": [
+        "Here are your product suggestions:-",
+        "Reebok, Link: https://www.reebok.com",
+        "Jack & Jones, Link: https://www.jackjones.in",
+        "US Polo, Link: https://www.uspoloassn.in"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "T-Shirt 1200 - 2000",
+      "response": [
+        "Here are your product suggestions:-",
+        "Tommy Hilfiger, Link: https://global.tommy.com",
+        "Superdry, Link: https://www.superdry.com",
+        "H&M, Link: https://www2.hm.com"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Laptop 25000 - 50000",
+      "response": [
+        "Here are your product suggestions:-",
+        "Dell, Link: https://www.dell.com",
+        "HP, Link: https://www.hp.com",
+        "Acer, Link: https://www.acer.com"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Laptop 50000 - 80000",
+      "response": [
+        "Here are your product suggestions:-",
+        "Lenovo, Link: https://www.lenovo.com",
+        "Asus, Link: https://www.asus.com",
+        "MSI, Link: https://www.msi.com"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Laptop 80000 - 150000",
+      "response": [
+        "Here are your product suggestions:-",
+        "Apple, Link: https://www.apple.com",
+        "Razer, Link: https://www.razer.com",
+        "Microsoft Surface, Link: https://www.microsoft.com/surface"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Smartphone 5000 - 10000",
+      "response": [
+        "Here are your product suggestions:-",
+        "Redmi, Link: https://www.mi.com",
+        "Realme, Link: https://www.realme.com",
+        "Samsung, Link: https://www.samsung.com"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "Smartphone 10000 - 20000",
+      "response": [
+        "Here are your product suggestions:-",
+        "Samsung, Link: https://www.samsung.com",
+        "Motorola, Link: https://www.motorola.com",
+        "Vivo, Link: https://www.vivo.com"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "Smartphone 20000 - 50000",
+      "response": [
+        "Here are your product suggestions:-",
+        "OnePlus, Link: https://www.oneplus.in",
+        "iQOO, Link: https://www.iqoo.com",
+        "Nothing, Link: https://in.nothing.tech"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "Headphones 500 - 2000",
+      "response": [
+        "Here are your product suggestions:-",
+        "JBL, Link: https://www.jbl.com",
+        "Boat, Link: https://www.boat-lifestyle.com",
+        "Sony, Link: https://www.sony.co.in"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Headphones 2000 - 5000",
+      "response": [
+        "Here are your product suggestions:-",
+        "Sennheiser, Link: https://www.sennheiser.com",
+        "Skullcandy, Link: https://www.skullcandy.com",
+        "Philips, Link: https://www.philips.com"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Headphones 5000 - 10000",
+      "response": [
+        "Here are your product suggestions:-",
+        "Bose, Link: https://www.bose.com",
+        "Sony WH, Link: https://www.sony.co.in",
+        "AirPods, Link: https://www.apple.com/airpods"
+      ]
+    }
+]

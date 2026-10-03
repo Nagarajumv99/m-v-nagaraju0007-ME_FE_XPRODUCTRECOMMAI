@@ -151,6 +151,7 @@ function App() {
     }
 
     nextConversation = { ...nextConversation, messages: nextMessages }
+    localStorage.setItem(ACTIVE_KEY, JSON.stringify(nextConversation))
     setConversation(nextConversation)
     setQuery('')
   }
@@ -161,21 +162,31 @@ function App() {
   }
 
   function updateMessage(messageId, updates) {
-    setConversation((current) => ({
-      ...current,
-      messages: current.messages.map((message) => message.id === messageId ? { ...message, ...updates } : message),
-    }))
+    const updated = {
+      ...conversation,
+      messages: conversation.messages.map((message) => message.id === messageId ? { ...message, ...updates } : message),
+    }
+    localStorage.setItem(ACTIVE_KEY, JSON.stringify(updated))
+    setConversation(updated)
   }
 
   function saveConversation(conversationToSave = conversation) {
     const saved = { ...conversationToSave, saved: true }
-    setHistory((current) => [saved, ...current.filter((item) => item.id !== saved.id)])
-    if (saved.id === conversation.id) setConversation(saved)
+    const nextHistory = [saved, ...history.filter((item) => item.id !== saved.id)]
+    localStorage.setItem(HISTORY_KEY, JSON.stringify(nextHistory))
+    setHistory(nextHistory)
+    if (saved.id === conversation.id) {
+      localStorage.setItem(ACTIVE_KEY, JSON.stringify(saved))
+      setConversation(saved)
+    }
   }
 
   function startNewSuggestion() {
     if (conversation.messages.length > 1) saveConversation()
-    setConversation(newConversation())
+    const freshConversation = newConversation()
+    localStorage.setItem(ACTIVE_KEY, JSON.stringify(freshConversation))
+    setConversation(freshConversation)
+    setQuery('')
     setShowFinalFeedback(false)
     setFeedbackTarget(null)
     setFeedbackDrafts({})
@@ -211,6 +222,7 @@ function App() {
       completedAt: new Date().toISOString(),
     }
     saveConversation(completed)
+    localStorage.setItem(ACTIVE_KEY, JSON.stringify({ ...completed, saved: true }))
     setConversation({ ...completed, saved: true })
     setShowFinalFeedback(false)
   }
